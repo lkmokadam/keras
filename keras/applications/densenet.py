@@ -7,6 +7,10 @@ from . import keras_modules_injection
 
 
 @keras_modules_injection
+def DenseNet(*args, **kwargs):
+    return densenet.DenseNet(*args, **kwargs)
+
+@keras_modules_injection
 def DenseNet121(*args, **kwargs):
     return densenet.DenseNet121(*args, **kwargs)
 
